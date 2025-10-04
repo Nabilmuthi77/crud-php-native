@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tambah User</title>
+    <title>Tambah Person</title>
 </head>
 <body>
-    <h2>Tambah Data User</h2>
+    <h2>Tambah Data Person</h2>
     <form method="post" action="">
         Nama: <input type="text" name="name" required><br><br>
         Email: <input type="email" name="email" required><br><br>
@@ -21,7 +21,7 @@ if(isset($_POST['submit'])){
     $name = $_POST['name'];
     $email = $_POST['email'];
 
-    mysqli_query($koneksi, "INSERT INTO users (name, email) VALUES('$name','$email')");
+    mysqli_query($koneksi, "INSERT INTO person (name, email) VALUES('$name','$email')");
     header("Location: index.php");
 }
 ?>

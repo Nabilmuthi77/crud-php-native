@@ -5,8 +5,8 @@
     <title>CRUD PHP Native</title>
 </head>
 <body>
-    <h2>Data Users</h2>
-    <a href="tambah.php">+ Tambah User</a>
+    <h2>Data Person</h2>
+    <a href="tambah.php">+ Tambah Person</a>
     <br><br>
     <table border="1" cellpadding="8" cellspacing="0">
         <tr>
@@ -17,7 +17,7 @@
         </tr>
         <?php
         $no = 1;
-        $data = mysqli_query($koneksi, "SELECT * FROM users");
+        $data = mysqli_query($koneksi, "SELECT * FROM person");
         while($d = mysqli_fetch_array($data)){
         ?>
         <tr>
